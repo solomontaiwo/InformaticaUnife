@@ -1,0 +1,24 @@
+### Catena di INPUT ###
+
+# Impostare la politica di default per la chain di input per non accettare pacchetti;
+iptables -P INPUT DROP
+
+# Abilitare il traffico UDP in entrata sulla porta 5678
+iptables -A INPUT -p udp --dport 5678 -j ACCEPT
+
+# Accettare il traffico in ingresso relativo a connessioni iniziate dalla macchina
+iptables -A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
+
+### Catena di OUTPUT ###
+
+# Impostare la politica di default per la chain di output su accept
+iptables -P OUTPUT ACCEPT
+
+# Bloccare tutto il traffico indirizzato alla sottorete privata 192.168.5.0/24
+iptables -A OUTPUT -d 192.168.5.0/24 -j DROP
+
+# Scartare tutti i pacchetti relativi a connessioni TCP con porta di destinazione 32768
+iptables -A OUTPUT -p tcp --dport 32768 -j DROP
+
+# Utilizzando la tabella di NAT si modifichi la porta di destinazione dei pacchetti TCP da 5000 a 5005
+iptables -t nat -A PREROUTING -p tcp --dport 5000 -j REDIRECT --to-port 5005

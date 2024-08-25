@@ -1,0 +1,34 @@
+# CATENA INPUT (eth0)
+
+# Impostare la politica di default per non consentire traffico in ingresso
+sudo iptables -A -i eth0 -s 172.16.0.0/16 -j ACCEPT
+
+# Accettare tutti i pacchetti provenienti dalla sottorete 172.16.0.0/16
+sudo iptables -A INPUT -I eth0 -s 172.16.0.0/16 -j ACCEPT
+
+# Scartare tutti i pacchetti UDP che non sono destinati alla porta 53 (DNS)
+sudo iptables -A INPUT -i eth0 -p udp ! --dport 53 -j DROP
+
+# Accettare pacchetti relativi alle connessioni già stabilite
+sudo iptables -A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
+
+# CATENA OUTPUT (eth1)
+
+# Impostare la politica di default su ACCEPT
+sudo iptables -P OUTPUT ACCEPT
+
+# Bloccare tutto il traffico in uscita verso la sottorete 10.0.0.0/8 eccetto il traffico HTTP e HTTPS
+sudo iptables -A OUTPUT -o eth1 -d 10.0.0.0/8 -p tcp ! --dport 80 -j DROP
+sudo iptables -A OUTPUT -o eth1 -d 10.0.0.0/8 -p tcp ! --dport 443 -j DROP
+
+# Consentire il traffico in uscita per il servizio di DNS
+sudo iptables -A OUTPUT -o eth1 -p udp --dport 53 -j ACCEPT
+
+# CATENA FORWARD
+
+# Impostare la politica di default su DROP
+sudo iptables -P FORWARD DROP
+
+# Consentire il forwarding dei pacchetti tra le due interfacce solo se destinati alla porta TCP 80 o 443
+sudo iptables -A FORWARD -p tcp --dport 80 -j ACCEPT
+sudo iptables -A FORWARD -p tcp --dport 443 -j ACCEPT

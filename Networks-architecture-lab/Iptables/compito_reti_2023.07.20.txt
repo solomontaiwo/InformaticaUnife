@@ -1,0 +1,40 @@
+### Catena di INPUT ###
+
+# Impostare la politica di default per la chain per non consentire traffico in ingresso
+sudo iptables -P INPUT DROP
+
+# Accettare tutti i pacchetti provenienti dalla sottorete 10.12.10.0/24
+sudo iptables -A INPUT -s 10.12.10.0/24 -j ACCEPT
+
+# Accettare tutti i pacchetti con porta sorgente UDP 7 e porta destinazione UDP 7
+sudo iptables -A INPUT -p udp --sport 7 --dport 7 -j ACCEPT
+
+# Accettare pacchetti relativi alle connessioni iniziate dalla workstation
+sudo iptables -A INPUT -m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT
+
+### Catena di OUTPUT ###
+
+# Impostare la politica di default su drop
+sudo iptables -P OUTPUT DROP
+
+# Consentire il traffico in uscita per il servizio di SSH
+sudo iptables -A OUTPUT -p tcp --dport 22 -j ACCEPT
+
+# Consentire il traffico in uscita relativo a HTTP e HTTPS
+sudo iptables -A OUTPUT -p tcp --dport 80 -j ACCEPT
+sudo iptables -A OUTPUT -p tcp --dport 443 -j ACCEPT
+
+# Consentire il traffico in uscita relativo a query DNS inviate dall’host
+sudo iptables -A OUTPUT -p udp --dport 53 -j ACCEPT
+sudo iptables -A OUTPUT -p tcp --dport 53 -j ACCEPT
+
+# Consentire il traffico in uscita verso la sottorete 10.14.0.0/16
+sudo iptables -A OUTPUT -d 10.14.0.0/16 -j ACCEPT
+
+### Catena di FORWARD ###
+
+# Impostare la politica di default su DROP
+sudo iptables -P FORWARD DROP
+
+# Consentire il traffico proveniente dall’interfaccia eth1 e destinato all’interfaccia eth0 con porta di destinazione TCP 25 con indirizzo di destinazione 10.16.22.15
+sudo iptables -A FORWARD -i eth1 -o eth0 -p tcp --dport 25 -d 10.16.22.15 -j ACCEPT
