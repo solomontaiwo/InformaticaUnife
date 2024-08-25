@@ -1,0 +1,2 @@
+Questo e' il file test.txt
+Questo e' il file newTest.txt

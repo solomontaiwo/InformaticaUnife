@@ -1,0 +1,1 @@
+int grandeArray(int array[]);

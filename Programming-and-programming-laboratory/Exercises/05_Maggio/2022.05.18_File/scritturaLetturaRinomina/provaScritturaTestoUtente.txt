@@ -1,0 +1,1 @@
+Questa e' la prova di scrittura all'interno di un file .txt creato dall'utente.

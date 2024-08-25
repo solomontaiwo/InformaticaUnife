@@ -1,0 +1,10 @@
+1 Solomon 400.00
+2 Funmilayo 10000.00
+3 Pino 39.00
+4 Marco 999.00
+5 Fulvio 15200.00
+6 Pasquale 383.00
+7 Kevin 21934.00
+8 Massimiliano 12.00
+9 Asdrubale 100.00
+10 Vik 5000.00

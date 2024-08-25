@@ -1,0 +1,2 @@
+/* Esercizio: un file di testo rubrica.txt contiuene una rubrica del telefono, in cui per ogni persona sono memorizzati di seguito NOME (max 20 caratteri senza spazi, incluso terminatore), INDIRIZZO (max 30 caratteri senza spazi, incluso '\0') e NUMERO (max 15 caratteri incluso '\0'). 
+Si scriva un programma C che legge da tastiera un nome, cerca la persona corrispondente nel file rubrica.txt e visualizza sullo schermo i dati della persona (se trovata) */

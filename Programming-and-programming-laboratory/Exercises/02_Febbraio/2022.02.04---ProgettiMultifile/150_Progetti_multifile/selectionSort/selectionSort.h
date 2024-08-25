@@ -1,0 +1,1 @@
+void selectionSort(int array[], int lunghezza);

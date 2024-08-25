@@ -1,0 +1,3 @@
+Pane 80
+Fontina 40
+Mela 200

@@ -1,0 +1,5 @@
+Mario_Rossi Via_Roma_15 333_1234567
+Giulia_Bianchi Piazza_Milano_23 347_7654321
+Elisa_Verdi Via_Italia_44 348_11122233
+Maria_Russo VIale_Cavour_18 320_3849234
+Carlo_Esposito Via_Mazzini_25 380_98765432
