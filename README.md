@@ -1,2 +1,3 @@
-# computer-science-unife
-Repository with material from the Computer Science (L-31) course of the University of Ferrara (starting from academic year 2021/2022 to 2023/2024)
+# Computer Science Unife (L-31, from academic year 2021/2022 to 2023/2024)
+
+Repository with material from the Computer Science (L-31) course of the University of Ferrara.
