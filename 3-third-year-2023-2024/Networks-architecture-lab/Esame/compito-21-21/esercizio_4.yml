@@ -1,0 +1,50 @@
+---
+- hosts: web
+  tasks:
+    - name: Update indice repository
+      apt:
+        update_cache: yes
+        cache_valid_time: 3600
+
+    - name: Install apache2
+      apt:
+        name: 'apache2'
+        state: present
+    
+    - name: Copy configuration file
+      copy:
+        src: "files/apache2.conf"
+        dest: "/etc/apache2/apache2.conf"
+        owner: 'root'
+        group: 'root'
+        mode: '0644'
+
+    - name: Create dir
+      file:
+        path: '/var/www/blog'
+        state: directory
+        owner: 'root'
+        group: 'root'
+        mode: '0744'
+
+    - name: Copy website into remote webserver
+      copy:
+        src: 'blog'
+        dest: '/var/www/blog'
+      notify: 'Restart apache2'
+    
+    - name: Enable e start di apache2
+      systemd:
+        name: 'apache2'
+        state: started
+        enabled: true
+  
+  handlers:
+    - name: 'Restart apache2'
+      service: 
+        name: 'apache2'
+        enabled: true
+        state: started
+
+
+

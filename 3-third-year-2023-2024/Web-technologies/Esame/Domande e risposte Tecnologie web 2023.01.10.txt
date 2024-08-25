@@ -1,0 +1,77 @@
+1) Quale delle seguenti operazioni non viene compiuta dall’indexer di Google sui documenti: 
+Formatta i risultati della ricerca in una pagina di risultati
+
+2) Visitando la pagina http://www.mydomain.it/progetti/progetto-169.html viene ritornato un documento HTML. È possibile quindi affermare che:
+Nella document root del server è presente una sotto-directory progetti
+
+3) Quale affermazione non è corretta riguardo agli identificatori URL? 
+È un nome stabile e definitivo di una risorsa
+
+4) Quale affermazione NON è corretta riguardo agli identificatori URN? 
+Identificano una risorsa immediatamente utilizzabile
+
+5) Cos’è il modello ISO/OSI?
+È uno standard formalizzato alla fine degli anni 70 che stabilisce gli standard di comunicazione in rete
+
+6) Nel modello ISO/OSI quanti livelli esistono e quali livelli abbiamo visto?
+Esistono 7 livelli e noi abbiamo visto il livello di Rete e Applicazione
+
+7) Quale è l’unica affermazione non corretta riguardo alla comunicazione Client-Server?
+È un modello di comunicazione, indiretta e asimmetrica
+
+9) In un modello Client-Server ITERATIVO, se il tempo di elaborazione di una singola richiesta è 4ms, il tempo di comunicazione medio è 26ms, il tempo di accodamento medio è 15ms e il tempo di generazione del risponditore è 1ms quale è il ritardo totale tra l’invio della richiesta e l'arrivo della risposta dal Server? 
+71ms
+
+
+10) In un documento HTML, osservando la disposizione dei tag, si può riconoscere una struttura
+A grafo
+
+11) In che modo il fattore umano influisce sulla progettazione delle UI?
+Restringendo il numero di persone per cui l’interfaccia è pienamente comprensibile
+
+12) In che modo gli studi sulla lettura di Yarbus hanno influenzato il design dei siti Web?
+Scoprendo che è possibile determinare quale è la posizione migliore per gli elementi.
+
+13) La scala del tempo umano prevede 4 bande, quale delle seguenti non è inclusa?
+Fisica
+
+14) Quali fra queste non è una funzione primaria di un browser web?
+Generare ed inviare le richieste
+
+15) Nell’utilizzo del framework PHP Laravel, cosa si può utilizzare per inserire i primi dati all’interno del database?
+Un Seeder
+
+16) Struttura della richiesta http 
+request, header, body
+
+17) Struttura della risposta http 
+header, status, body
+
+18) Tipo di interazione con canale di comunicazione 
+Connection oriented
+
+19) Server concorrenti, modello iterativo 
+Tr = Ts + 2Tc + Tq
+
+20) Sottoregioni/Sottogruppi dei datacenter Amazon che non condividono punti di fallimento
+zone
+
+21) Soft control e view 
+l’utente deve adattarsi al cambiamento di uno
+
+22) quale affermazione è errata riguardo l’HTTP2 
+consente il DEmultiplexing
+
+23) esempio con sitoweb, dominio, URL, 000default.config, .config, 
+
+24) passaggio da soft control a view?
+
+25) componenti del Cloud quali sono?
+
+26) a cosa servono tecnologie client side?
+
+27) cos'è il fattore umano?
+
+28)  impostazioni delle pagine web non sono indiscutibili?
+
+29)  caratteristiche protocollo http?

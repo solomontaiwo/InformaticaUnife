@@ -1,0 +1,4 @@
+---
+mysql_root_password: "password_fortissima"
+http_host: "example2.com"
+http_port: "80"

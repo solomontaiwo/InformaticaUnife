@@ -1,0 +1,41 @@
+# CATENA INPUT (eth0)
+# Impostare la politica di default per la chain per non consentire traffico in ingresso
+sudo iptables -P INPUT DROP
+
+# Accettare tutti i pacchetti dalla sottorete 192.168.22.0/24
+iptables -A INPUT -s 192.168.22.0/24 -j ACCEPT
+
+# Accettare tutti i pacchetti con destinazione porta TCP 45768
+iptables -A INPUT -p tcp --dport 45768 -j ACCEPT
+
+# Accettare pacchetti relativi alle connessioni iniziate dalla workstation
+iptables -A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
+
+# CATENA OUTPUT (wlan0)
+# impostare la politica di default su drop
+sudo iptables -P OUTPUT DROP
+
+# Consentire il traffico in uscita relativo a query DNS inviate dall’host
+iptables -A OUTPUT -p udp --dport 53 -j ACCEPT
+iptables -A OUTPUT -p tcp --dport 53 -j ACCEPT
+
+# Consentire il traffico in uscita per i servizi HTTP e HTTPS
+iptables -A OUTPUT -p tcp --dport 80 -j ACCEPT
+iptables -A OUTPUT -p tcp --dport 443 -j ACCEPT
+
+# Consentire il traffico in uscita per i servizi IMAP e SMTP
+iptables -A OUTPUT -p tcp --dport 143 -j ACCEPT
+iptables -A OUTPUT -p tcp --dport 993 -j ACCEPT
+iptables -A OUTPUT -p tcp --dport 25 -j ACCEPT
+iptables -A OUTPUT -p tcp --dport 465 -j ACCEPT
+
+# Consentire il traffico in uscita per il servizio di SSH
+iptables -A OUTPUT -p tcp --dport 22 -j ACCEPT
+
+# CATENA FORWARD
+# Impostare la politica di default su DROP
+sudo iptables -i wlan0 -o eth0 -p tcp --dport 22 -j ACCEPT 
+
+# Consentire il traffico proveniente dall’interfaccia wlan0 e destinato all’interfaccia eth0 con porta di destinazione TCP 22
+iptables -A FORWARD -i wlan0 -o eth0 -p tcp --dport 22 -j ACCEPT
+

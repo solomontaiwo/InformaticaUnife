@@ -1,0 +1,8 @@
+iptables -P INPUT DROP
+iptables -A INPUT -p udp --dport 5678 -j ACCEPT
+iptables -A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
+iptables -P OUTPUT ACCEPT
+iptables -A OUTPUT -d 192.168.5.0/24 -j DROP
+iptables -A OUTPUT -p tcp --dport 32768 -j DROP
+iptables -t nat -A PREROUTING -p tcp --dport 5000 -j REDIRECT --to-port 5005
+

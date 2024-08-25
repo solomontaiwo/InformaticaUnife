@@ -1,0 +1,24 @@
+<VirtualHost *:80>
+    ServerName {{ http_host }}
+    DocumentRoot /var/www/{{ http_host }}
+
+    <Directory /var/www/{{ http_host }}>
+        Options Indexes FollowSymLinks
+        AllowOverride None
+        Require all granted
+    </Directory>
+
+    <FilesMatch "\.php$">
+        # 2.4.10+ can proxy to unix socket
+        SetHandler "proxy:unix:/var/run/php/php8.2-fpm.sock|fcgi://localhost"
+    </FilesMatch>
+
+    # Deny access to .htaccess files
+    <FilesMatch "^\.ht">
+        Require all denied
+    </FilesMatch>
+
+    ErrorLog ${APACHE_LOG_DIR}/{{ http_host }}_error.log
+    CustomLog ${APACHE_LOG_DIR}/{{ http_host }}.com_access.log combined
+</VirtualHost>
+

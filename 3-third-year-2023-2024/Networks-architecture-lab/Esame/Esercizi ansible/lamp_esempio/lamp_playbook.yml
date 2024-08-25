@@ -1,0 +1,101 @@
+##################################################
+# LAMP Linux Apache2 MySql Php
+##################################################
+---
+- hosts: web
+  become: true
+  vars_files:
+    - vars/default.yml
+
+  tasks:
+
+    - name: Stop and disable nginx if running
+      systemd:
+        name: 'nginx'
+        state: stopped
+        enabled: no
+
+    - name: Install LAMP Packages
+      apt: name={{ item }} update_cache=yes state=latest
+      loop: [ 'apache2', 'mariadb-server', 'python3-pymysql', 'php-fpm', 'php-mysql' ]
+    
+  # Apache2 Configuration
+    - name: Sets Apache2 conf file
+      template:
+        src: "files/apache2.conf.j2"
+        dest: "/etc/apache2/sites-available/{{ http_host }}.conf"
+
+    - name: Enables the new site via symlink
+      file:
+        src: "/etc/apache2/sites-available/{{ http_host }}.conf"
+        dest: "/etc/apache2/sites-enabled/{{ http_host }}.conf"
+        state: link
+      #notify: Reload Apache2
+
+    - name: Reaload Apache2 
+      ansible.builtin.systemd:
+        name: apache2
+        state: reloaded
+
+    - name: Ensure required Apache modules are enabled
+      apache2_module:
+        name: "{{ item }}"
+        state: present
+      with_items:
+        - proxy
+        - proxy_fcgi
+        - rewrite
+      #notify: Restart Apache2
+    
+    - name: restart apache2
+      ansible.builtin.systemd:
+        name: apache2
+        state: restarted
+
+    - name: Delete old site directory if present
+      file:
+        path: /var/www/{{ http_host}}/
+        state: absent
+    
+    - name: Create site directory
+      file:
+        path: /var/www/{{ http_host }}/
+        state: directory
+        mode: 0755
+        owner: "{{ ansible_user }}"
+        group: "{{ ansible_user }}"
+
+    # check note at https://docs.ansible.com/ansible/latest/collections/community/mysql/mysql_user_module.html#examples
+
+    # Copy the mysql credential file to /root/.my.cnf
+    - name: Create mysql credential file
+      template:
+        src: "files/mysql_conf_file.j2"
+        dest: "/root/.my.cnf"
+
+    # MySQL set root password
+    - name: Sets the root password
+      mysql_user:
+        name: root
+        password: "{{ mysql_root_password }}"
+        login_unix_socket: /var/run/mysqld/mysqld.sock
+
+    # Sets Up a simple PHP website download from Github in the files dir
+    - name: Sets Up PHP Info Page
+      copy:
+        src: "files/simple-php-website/"
+        dest: "/var/www/{{ http_host }}"
+        owner: "{{ ansible_user }}"
+        group: "{{ ansible_user }}"
+        mode: 0644
+
+  handlers:
+    - name: Reload Apache2
+      service:
+        name: apache2
+        state: reloaded
+
+    - name: Restart Apache2
+      service:
+        name: apache2
+        state: restarted

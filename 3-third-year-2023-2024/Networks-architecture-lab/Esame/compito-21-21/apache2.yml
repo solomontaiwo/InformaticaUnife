@@ -1,0 +1,16 @@
+---
+- hosts: web
+  tasks:
+    - name: 'Install apache2'
+      apt:
+        name: 'apache2'
+        state: latest
+      notify: 
+      - restart apache2
+  handlers:
+    - name: 'restart apache2'
+      service:
+        name: 'apache2'
+        state: started
+        static: yes
+

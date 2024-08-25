@@ -1,0 +1,21 @@
+# Esercizio 4 Ansible
+---
+- hosts: web
+  tasks:
+    - name: 'Update dei repository'
+      apt:
+        update_cache: yes
+        cache_valid_time: 1800
+    - name: 'Install dependencies'
+      apt:
+        name: ['code', 'gcc', 'g++', 'make']
+        state: present
+    - name: 'Creo directory'
+      file:
+        path: '/home/ubuntu/projects'
+        state: directory
+        mode: '0744'
+        owner: 'developer'
+        group: 'developer'
+        force: false
+

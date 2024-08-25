@@ -1,0 +1,24 @@
+# Catena di INPUT
+# Impostare la politica di default 
+# per la chain di input per non accettare pacchetti
+iptables -P INPUT DROP
+
+# Abilitare il traffico SSH verso la macchina 
+# (si noti che la porta del servizio è la 8022 e non
+# quella di default);
+iptables -A INPUT -p tcp --dport 8022 -j ACCEPT
+
+# Abilitare tutto il traffico proveniente dall sottorete 10.16.0.0/16
+iptables -A INPUT -s 10.16.0.0/16 -j ACCEPT
+
+# Abilitare il traffico ICMP
+iptables -A INPUT -p icmp -j ACCEPT
+
+# Catena di OUTPUT
+# Non consentire traffico verso la sottorete 10.16.10.0/24;
+iptables -A OUTPUT -d 10.16.10.0/24 -j DROP
+
+# Catena di FORWARD
+# Consentire il passaggio del traffico tra 
+# l’interfaccia eth0 e l’interfaccia eth1
+iptables -A FORWARD -i eth0 -o eth1 -j ACCEPT
