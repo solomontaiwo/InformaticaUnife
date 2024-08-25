@@ -1,0 +1,23 @@
+Si realizzi, utilizzando la socket API, un'applicazione distribuita
+Client/Server che permetta di controllare la presenza di una specifica stringa
+di testo all'interno di file di interesse nel filesystem del Server.
+
+Il Client deve presentare la seguente interfaccia:
+
+	rgrep hostname porta stringa nomefile
+
+dove hostname e porta sono rispettivamente il nome dell'host e il numero di
+porta su cui il processo Server è in ascolto, e stringa e nomefile sono
+rispettivamente la stringa e il nome del file sul filesystem del Server a cui
+l'utente è interessato.
+
+Per prima cosa, il Client si dovrà connettere al Server, comunicandogli il nome
+del file a cui l'utente è interessato. Il Server dovrà quindi verificare la
+presenza del file nel file system locale, e terminare la connessione nel caso
+quest'ultimo non esista. Il Client dovrà quindi comunicare la stringa al
+Server, che a sua volta dovrà restituire al Client il contenuto delle righe del
+file in cui compare la stringa richiesta. Una volta ricevute le informazioni
+dal Server, il Client dovrà stamparle a video e quindi terminare.
+
+Si realizzino il Server in Unix/C e il Client sia in Unix/C che in Java.
+

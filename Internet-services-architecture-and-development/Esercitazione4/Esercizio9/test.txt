@@ -1,0 +1,8 @@
+1 spesa
+2 spesa
+5 altro
+5 sale
+4 senape
+10 spesa
+11 soia
+56 spesa

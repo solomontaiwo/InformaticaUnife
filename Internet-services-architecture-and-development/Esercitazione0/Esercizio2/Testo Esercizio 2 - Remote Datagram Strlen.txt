@@ -1,0 +1,18 @@
+﻿Si progetti un'applicazione distribuita Client/Server utilizzando le socket
+datagram in Java. Il Client deve offrire la seguente interfaccia:
+
+	java RemoteDGramStrlen nodoServer portaServer
+
+dove nodoServer e portaServer sono rispettivamente il nome della macchina e il
+numero di ports su cui il Server è in ascolto.
+
+L'applicazione deve contare il numero di caratteri contenuti in una stringa di
+testo fornita dall'utente. Più precisamente, il Client deve richiedere
+all'utente la stringa da inviare al processo Server, che è incaricato di
+contare il numero di caratteri in essa contenuti e rimandarlo al Client. Per
+esempio, se il Client invia, la stringa "Ciao, mondo!", il Server deve
+restituire al Client il numero 12.
+
+Al termine di ogni richiesta, il Client deve mettersi in attesa della stringa
+successiva, e terminare qualora l'utente inserisca la stringa "fine".
+

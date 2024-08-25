@@ -1,0 +1,32 @@
+Si realizzi un'applicazione distribuita in C/Unix che, sfruttando la socket
+API, implementi un servizio di conteggio remoto del numero di caratteri
+contenuti in una stringa.
+
+L'applicazione deve avere la seguente interfaccia:
+
+	rstrlen hostname porta
+
+dove hostname è il nome dell'host dove risiede il Server e porta è il numero
+di porta a cui esso è associato.
+
+Per prima cosa, il Client deve interfacciarsi con l'utente, da cui riceve, via
+terminale la stringa di interesse. Il Client deve quindi trasmettere la stringa
+al Server, che a sua volta dovrà contare il numero di caratteri in essa
+contenuti e restituirlo al Client, che lo stamperà a video.
+
+Al termine di ogni richiesta, il Client dovrà attendere che l'utente inserisca
+una nuova stringa. Il Client dovrà terminare nel caso l'utente inserisca la
+stringa "fine".
+
+Opzionalmente, si realizzi anche il Client in Java.
+
+
+N.B.: Ai fini di questo esercizio va benissimo effettuare il conteggio dei
+caratteri sia tramite la funzione strlen della libreria standard del C che
+tramite una funzione che conta il numero di caratteri UTF-8 come la funzione
+
+	int u8_strlen (const uint8_t *s, size_t n)
+
+della libreria libunistring. Per ulteriori informazioni si veda:
+
+https://www.gnu.org/software/libunistring/manual/libunistring.html

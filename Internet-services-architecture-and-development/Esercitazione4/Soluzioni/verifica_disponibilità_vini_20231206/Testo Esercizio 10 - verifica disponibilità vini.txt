@@ -1,0 +1,30 @@
+Si realizzi, utilizzando la Socket API, un'applicazione distribuita
+Client/Server che permetta a un ristoratore di verificare la disponibilità di
+vini pregiati nella propria cantina.
+
+Il Client deve presentare la seguente interfaccia:
+
+	verifica_disponibilità_vini server porta
+
+dove server e porta sono rispettivamente il nome logico dell'host e il numero
+di porta su cui si trova il Server.
+
+Per prima cosa, il Client si interfaccia con l'utente, da cui riceve, via
+tastiera, il nome del vino e l'annata di interesse. Il Client dovrà inviare i
+dati inseriti al Server, che a sua volta dovrà occuparsi di analizzare i
+registri del magazzino per reperire le informazioni sui vini richiesti
+dall'utente. Infine, il Server dovrà inviare le informazioni al Client, che le
+stamperà a video.
+
+Si supponga che le informazioni sul magazzino del ristorante siano salvate nel
+file /var/local/magazzino.txt all'interno del filesystem del Server. In
+particolare, si supponga che ogni riga del file contenga i dati di una
+particolare tipologia di vino con, in quest'ordine, nome, numero di bottiglie
+disponibili, annata, costo, ecc. (Si noti che tipicamente un vino viene
+prodotto in più annate e in un'annata vengono prodotti molti vini diversi.)
+
+Al termine di ogni richiesta, il Client deve mettersi in attesa della richiesta
+successiva, e terminare qualora l'utente inserisca la stringa "fine".
+
+Si realizzino il Server in Unix/C e il Client sia in Unix/C che in Java.
+

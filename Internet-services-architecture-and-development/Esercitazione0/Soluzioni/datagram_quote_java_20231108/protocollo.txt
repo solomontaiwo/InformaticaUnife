@@ -1,0 +1,5 @@
+
+  C                        S
+  ------> "QUOTE" (UTF-8)
+
+  <------ citazione (UTF-8)

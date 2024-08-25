@@ -1,0 +1,36 @@
+Si realizzi, utilizzando la socket API, un'applicazione distribuita
+Client/Server che permetta di visualizzare i processi attivi sul server
+indicato.
+
+Il Client deve presentare la seguente interfaccia:
+
+	rps hostname porta <option>
+
+dove hostname e porta sono rispettivamente nome host e numero porta del Server
+e il parametro option, che può essere utilizzato oppure omesso dall'utente, una
+singola opzione da passare al comando ps di Unix.
+
+Il Client si dovrà connettere al Server, comunicandogli il parametro desiderato
+per la visualizzazione dei processi attivi (si veda "man ps" per la lista di
+tutti i parametri disponibili). A sua volta, il Server si occuperà di lanciare
+il comando ps con il parametro ricevuto e di restituire al Client il risultato.
+
+L'output prodotto dal Client sarà quindi del tipo:
+
+$ ./rps localhost 50000 a
+Server localhost:
+  PID TTY      STAT   TIME COMMAND
+ 4004 tty7     S<s+  13:19 /usr/X11R6/bin/X -br -nolisten tcp :0 vt7 -auth /var/run/xauth/A:0-cf8ZCK
+ 4014 tty1     Ss+    0:00 /sbin/getty 38400 tty1
+ 4167 pts/1    Ss     0:00 -l
+ 4589 pts/2    Ss     0:00 /bin/bash
+ 6129 pts/2    S+     0:00 ./rpsserver
+ 6214 pts/3    S+     0:00 ./rps localhost a
+ 6215 pts/2    R+     0:00 ps a
+
+ATTENZIONE!!! Sarà necessario considerare attentamente il caso in cui l'utente
+non fornisca alcuna opzione alla utility rps, poiché questo ha ricadute sul
+progetto del protocollo applicativo.
+
+Si realizzino il Server in Unix/C e il Client sia in Unix/C che in Java.
+

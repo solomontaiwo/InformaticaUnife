@@ -1,0 +1,11 @@
+
+ Client                                           Server
+    -----> file_name (stringa UTF-8 terminata da \n)
+
+    <----- riga 1 file (UTF-8)
+    <----- riga 2 file
+    <----- riga 3 file
+    <----- riga 4 file
+    <----- riga 5 file
+
+    X----- close

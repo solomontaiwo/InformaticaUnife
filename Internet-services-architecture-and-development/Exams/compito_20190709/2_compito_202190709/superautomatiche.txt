@@ -1,0 +1,5 @@
+89,pippo,paperino,300
+67,pippo,minni,200
+83,pippo,gastone,100
+98,pluto,topolino,300
+85,pluto,orazio,500

@@ -1,0 +1,31 @@
+Si realizzi, utilizzando la Socket API, un'applicazione distribuita
+Client/Server che permetta a un utente di controllare le spese del proprio
+conto corrente.
+
+Il Client deve presentare la seguente interfaccia:
+
+	controllo_conto_corrente server porta
+
+dove server e porta sono rispettivamente il nome logico dell'host e il numero
+di porta su cui si trova il Server.
+
+Per prima cosa, il Client si interfaccia con l'utente, da cui riceve, via
+tastiera, una stringa che rappresenta la categoria di spesa di cui si vogliono
+controllare i pagamenti. Il Client dovrà inviare la categoria inserita al Server,
+che a sua volta dovrà occuparsi di analizzare i dati del conto corrente,
+selezionando le spese appartenenti alla categoria richiesta dall'utente ed
+elencandole in ordine decrescente (ovverosia da quella di importo più alto a
+quella di importo più basso). Infine, il Server dovrà inviare le informazioni
+al Client, che le stamperà a video.
+
+A questo proposito, si supponga che le informazioni sul conto corrente
+dell'utente siano salvate nel file /var/local/conto_corrente.txt all'interno
+del filesystem del Server. In particolare, si supponga che ogni riga del file
+contenga i dati di una singola operazione con (in quest'ordine) gli attributi
+importo, data, categoria di spesa, ecc..
+
+Al termine di ogni richiesta, il Client deve mettersi in attesa della richiesta
+successiva, e terminare qualora l'utente inserisca la stringa "fine".
+
+Si realizzino il Server in Unix/C e il Client sia in Unix/C che in Java.
+
