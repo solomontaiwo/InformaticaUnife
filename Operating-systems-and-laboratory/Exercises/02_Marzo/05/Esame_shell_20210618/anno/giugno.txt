@@ -1,0 +1,6 @@
+8, horror, Saw, Mad House, film, 1:30
+4, commedia, Ciao, Ruffini Production, serie tv, 50
+9, anime, Attack on Titan, anime, 25
+2, cartone, Yoyo, Rai, cartone, 20
+9, horror, Saw 2, Mad Rondo, film, 1:50
+2, horror, Laps Laz, Horrors Vision, film, 1:00

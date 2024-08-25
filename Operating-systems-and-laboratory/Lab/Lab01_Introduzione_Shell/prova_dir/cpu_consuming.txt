@@ -1,0 +1,10 @@
+USER               PID  %CPU %MEM      VSZ    RSS   TT  STAT STARTED      TIME COMMAND
+root               831  94.4  1.1 409812032  94864   ??  Rs   Tue10AM 380:47.95 /System/Library/Frameworks/CoreServices.framework/Frameworks/Metadata.framework/Versions/A/Support/mds_stores
+solomontaiwo     13525  29.7  1.7 409979888 138560   ??  S     8:53AM  14:28.10 /Applications/IINA.app/Contents/MacOS/IINA
+_windowserver      565  22.6  1.2 410448256 102688   ??  Ss   Tue10AM 223:09.57 /System/Library/PrivateFrameworks/SkyLight.framework/Resources/WindowServer -daemon
+solomontaiwo     13530  11.2  0.1 408893040  11440   ??  Ss    8:53AM   5:22.06 /System/Library/Frameworks/VideoToolbox.framework/Versions/A/XPCServices/VTDecoderXPCService.xpc/Contents/MacOS/VTDecoderXPCService
+solomontaiwo     12844   0.0  0.2 408985680  18432   ??  Ss    9:12PM   0:00.11 /System/Library/Frameworks/GroupActivities.framework/Versions/A/XPCServices/GroupSessionService.xpc/Contents/MacOS/GroupSessionService
+solomontaiwo     12843   0.0  1.7 409972848 142912   ??  S     9:12PM   0:14.13 /System/Applications/Notes.app/Contents/MacOS/Notes
+solomontaiwo     12376   0.0  0.0 408810640   3504   ??  Ss    7:19PM   0:00.03 /System/Library/Frameworks/Metal.framework/Versions/A/XPCServices/MTLCompilerService.xpc/Contents/MacOS/MTLCompilerService
+solomontaiwo     12375   0.0  0.1 408301360  11904   ??  S     7:19PM   0:00.27 /System/Library/Frameworks/ApplicationServices.framework/Frameworks/PrintCore.framework/Versions/A/printtool
+solomontaiwo     12373   0.0  0.1 408238032   6032   ??  Ss    7:19PM   0:00.02 /System/Library/PrivateFrameworks/Categories.framework/Versions/A/XPCServices/CategoriesService.xpc/Contents/MacOS/CategoriesService

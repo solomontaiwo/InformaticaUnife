@@ -1,0 +1,3 @@
+120 tipoA Pippo
+110 tipoB Pippo
+80 tipoC Pluto

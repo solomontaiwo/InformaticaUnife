@@ -1,0 +1,12 @@
+Applications (Parallels)/
+Applications/
+Desktop/
+Documents/
+Downloads/
+Library/
+Movies/
+Music/
+Parallels/
+Pictures/
+Public/
+micromamba/

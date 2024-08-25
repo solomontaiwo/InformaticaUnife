@@ -1,0 +1,4 @@
+181050 , Sistemi operativi, 10, 30
+111111 , Programmazione, 9, 28
+123456 , Matematica, 12, 20
+789101 , Architettura degli Elaboratori, 21

@@ -1,0 +1,5 @@
+4, avventura, PincoPallo Strikes Again, Mad House, film, 1:30
+8, azione, Ciao, Ruffini Production, serie tv, 20
+10, horror, Bau che paura, Cinematics, film, 1:30
+9, horror, Saw 3, Italia 1, film, 50
+7, horror, Terror at the madhouse, Netflix, film, 1:50
