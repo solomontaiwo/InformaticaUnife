@@ -1,0 +1,52 @@
+\usepackage{pseudocode}
+\usepackage{chngcntr}
+
+
+% fixes for pseudocode-hyperref interaction
+\counterwithout{pseudocode}{section}
+%\counterwithin{pseudocode}{chapter}
+\renewcommand{\thepseudocode}{\thechapter.\arabic{pseudocode}}
+
+\newcounter{newpseudonum}[pseudocode]
+\renewcommand{\thenewpseudonum}{\thepseudocode\alph{newpseudonum}}
+\providecommand{\labelline}[2][0.5in]{&\refstepcounter{newpseudonum}\hspace*{#1}\mbox{(\thenewpseudonum)}\label{#2}}
+\ifpdf
+  \providecommand{\refline}[1]{\hyperref[#1]{(\ref*{#1})}}
+\else
+  \providecommand{\refline}[1]{\ref*{#1}}
+\fi
+\newcommand{\pcodetab}[1]{\hspace*{#1ex}}
+
+% alignement fixes for pseudocode blocks
+\renewcommand{\DO}{\\\!\!\pcodetab{1}\mbox{ \bfseries \makebox[0pt][l]{do}\phantom{xx} }}
+\renewcommand{\ELSE}{\\\pcodetab{1}\mbox{ \bfseries \makebox[0pt][l]{else}\phantom{then} }}
+\renewcommand{\RETURN}[1]{\ifthenelse{\equal{#1}{} }{\mbox{\bfseries return}}{\mbox{\bfseries return}#1}}
+\newcommand{\FUNCTION}[2]{\mbox{\bfseries proc }\mbox{\textsc{#1}}\left(\ensuremath{#2}\right)\\}
+\newcommand{\ENDFUNCTION}{}
+\newcommand{\FCALL}[2]{\mbox{\textsc{#1}}\left(\ensuremath{#2}\right)\\}
+
+
+
+% code box length
+\newlength{\pcodewidth}
+\setlength{\pcodewidth}{\textwidth}
+\addtolength{\pcodewidth}{-58pt}
+
+% code environment
+\newenvironment{code}[1]{
+\begin{Sbox}
+\!\!\begin{minipage}{#1}%\pcodewidth}
+\bfseries
+\noindent
+%\begin{math}
+\small
+$$
+\begin{array}{@{\hspace*{1ex}}lr@{}}
+}{
+\end{array}
+$$
+%\end{math}
+\end{minipage}\vspace{-2mm}
+\end{Sbox}
+\shadowbox{\TheSbox}{}
+}

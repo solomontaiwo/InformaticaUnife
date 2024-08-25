@@ -1,0 +1,168 @@
+\documentclass[a4paper, 12pt]{book}
+\usepackage{amssymb}
+\usepackage[english,italian]{babel}
+\usepackage{xspace}
+\usepackage{tikz}
+\usepackage[newitem,newenum,neverdecrease]{paralist}
+\usepackage{amsmath,amssymb,amsfonts,mathrsfs,latexsym,stmaryrd}
+\usepackage{mathtools}
+\usepackage{amsthm}
+\usepackage{ifpdf}
+\usepackage{cases}
+\usepackage{ragged2e} 	% https://tex.stackexchange.com/questions/89680/how-can-one-set-full-justification-within-left-justified-raggedright-text
+\usepackage{breakcites} % https://tex.stackexchange.com/questions/2773/how-do-i-make-latex-push-long-citations-to-a-new-line
+\usepackage{hyperref}	% http://tex.stackexchange.com/questions/73862/how-can-i-make-a-clickable-table-of-contents
+\usepackage{fancyhdr}	% https://www.sharelatex.com/blog/2013/08/06/thesis-series-pt2.html
+\usepackage{titlesec} 	% http://tex.stackexchange.com/questions/11444/how-to-format-the-chapter-heading
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{xcolor}
+\usepackage{geometry}
+\usepackage{layout}		% http://tex.stackexchange.com/questions/50258/margins-of-book-class
+\input{fixpseudocode}	% for pseudocodes
+
+%%% Formattazione del header del Capitolo
+\titleformat
+{\chapter} % command
+[display] % shape
+{\bfseries\Huge\itshape} % format
+{\flushright \color{black!45}{\Large Capitolo \thechapter}} % label
+{0.5ex} % sep
+{
+    \rule{\textwidth}{3pt}
+    \vspace{1ex}
+    \centering
+} % before-code
+[
+\vspace{-0.5ex}%
+\rule{\textwidth}{3pt}
+] % after-code
+%%% end
+
+%%% Formattazione dei hyper riferimenti (hyperref)
+% hyperref setup -- http://tex.stackexchange.com/questions/73862/how-can-i-make-a-clickable-table-of-contents
+\definecolor{Aqua}{rgb}{0,0.45,0.45}
+\definecolor{Gold}{rgb}{0.55,0.55,0}
+\hypersetup{
+    bookmarks=true,         % show bookmarks bar?
+    unicode=false,          % non-Latin characters in Acrobat’s bookmarks
+    pdftoolbar=true,        % show Acrobat’s toolbar?
+    pdfmenubar=true,        % show Acrobat’s menu?
+    pdffitwindow=false,     % window fit to page when opened
+    pdfstartview={FitH},    % fits the width of the page to the window
+    pdftitle={Analisi e strutturazione di dati storici medici densitometrici per fini statistici},    % title
+    pdfauthor={Bombonati Stefano},     % author
+    pdfsubject={Analisi e strutturazione di dati},   % subject of the document
+    pdfcreator={Bombonati Stefano},   % creator of the document
+    pdfproducer={Bombonati Stefano}, % producer of the document
+    pdfkeywords={Analisi e strutturazione di dati medici densitometrici}, % list of keywords
+    linktocpage=false,		% number hyperref'd =true, false otherwise
+    pdfnewwindow=true,      % links in new PDF window
+    colorlinks=true,       % false: boxed links; true: colored links
+    linkcolor=Aqua,          % color of internal links (change box color with linkbordercolor)
+    citecolor=magenta,        % color of links to bibliography
+    filecolor=green,      % color of file links
+    urlcolor=Gold           % color of external links
+}
+%%% end
+
+% https://tex.stackexchange.com/questions/95488/list-of-figures-and-page-numbering
+\makeatletter
+\newcommand{\emptypage}[1]{%
+  \cleardoublepage
+  \begingroup
+  \let\ps@plain\ps@empty
+  \pagestyle{empty}
+  #1
+  \cleardoublepage}
+\makeatletter
+
+% base line strech (default 1.0) -- interlinea
+\renewcommand{\baselinestretch}{1.2}
+
+\begin{document}
+%%% Nuova geometria per la pagina del titolo
+% visto che la classe del documento è book, le pagine pari e dispari avranno geometrie diverse,
+% mentre quella del titolo deve essere unica!
+\newgeometry{
+  top=2cm,
+  bottom=2.5cm,
+  left=2.5cm,
+  right=2.5cm,
+  headsep=25pt,
+  headheight=14.5pt
+}
+
+%%% Pagina del titolo
+\begin{titlepage}
+	\topskip0pt
+	%\vspace*{\fill}
+	\centering
+	\vspace*{20mm}
+	\includegraphics[]{logo.png}\\
+	\vspace*{1cm}
+	\huge \textbf{\textsc{Università degli Studi di Ferrara}}
+	\Large \textsc{Corso di Laurea in Informatica}
+	
+	\vspace*{1.5cm}
+	\hrule width \hsize \kern 1mm \hrule width \hsize height 2pt
+	\vspace*{10mm}
+	\Huge \emph{\textbf{Il mio titolo della tesi in italiano}}
+	\vspace*{10mm}
+	\hrule width \hsize height 2pt
+	\vspace*{1mm}
+	\hrule width \hsize \kern 1mm
+	
+	\vspace*{15mm}
+	\begin{minipage}{0.45\textwidth}
+		\begin{flushleft} \Large
+			\emph{Relatore:}\\
+			\Large \textbf{Prof. Nome \textsc{Cognome}}
+		\end{flushleft}
+	\end{minipage}
+	\begin{minipage}{0.45\textwidth}
+		\begin{flushright} \Large
+			\emph{Laureando:} \\
+			\Large \textbf{Nome \textsc{Cognome}}
+		\end{flushright}
+	\end{minipage}
+	
+	\vspace*{20mm}
+	\Large \textsc{Anno Accademico $2016-2017$}
+\end{titlepage}
+\restoregeometry
+
+\addtocontents{toc}{~\hfill\textbf{Page}\par}	% https://texblog.org/2011/09/09/10-ways-to-customize-tocloflot/
+\pagestyle{empty}
+\clearpage
+\tableofcontents
+\thispagestyle{empty}
+\addtocontents{toc}{\protect\thispagestyle{empty}}	% http://tex.stackexchange.com/questions/2995/removing-page-number-from-toc
+
+\chapter{Introduzione}
+%%% Fancy header settings, queste impostazioni vanno fatte solo una volta all'inizio del primo capitolo!
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{2pt}
+\fancyhead[EL]{\textbf{\textsf{\nouppercase\thepage}}}
+\fancyhead[ER]{\textbf{\textsf{\nouppercase\leftmark}}}
+\fancyhead[OR]{\textbf{\textsf{\nouppercase\thepage}}}
+\fancyhead[OL]{\textbf{\textsf{\nouppercase {\rightmark}}}}
+%%% end
+
+%%% all'inizio di ogni capitolo, questa impostazione rimuove il numero di pagina, provare a commentare per vedere la differenza
+\thispagestyle{empty}
+
+Scrivi qua l' introduzione
+\newpage
+Qua inizia la numerazione delle pagine, guardare in alto della pagina
+
+\begin{figure}[t]
+\begin{center}
+\includegraphics[scale=0.7]{logo.png}
+\end{center}
+\caption{<===Diventa in italiano.}\label{fig:uni}
+\end{figure}
+
+
+\end{document} 

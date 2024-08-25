@@ -1,0 +1,162 @@
+\documentclass[a4paper, 12pt]{book}
+\usepackage{amssymb}
+\usepackage[italian]{babel}
+\usepackage{xspace}
+\usepackage{tikz}
+\usepackage[newitem,newenum,neverdecrease]{paralist}
+\usepackage{amsmath,amssymb,amsfonts,mathrsfs,latexsym,stmaryrd}
+\usepackage{mathtools}
+\usepackage{amsthm}
+\usepackage{ifpdf}
+\usepackage{cases}
+\usepackage{ragged2e}
+\usepackage{breakcites}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern} % Usare il pacchetto Latin Modern per una migliore qualità dei font
+\usepackage{microtype} % Migliora qualità tipografica
+\usepackage[utf8]{inputenc}
+\usepackage{xcolor}
+\usepackage{geometry}
+\usepackage{layout}
+\input{fixpseudocode}
+\usepackage{csquotes}
+\usepackage{listings}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{longtable}
+\usepackage{ltablex}
+\usepackage{multirow}
+\usepackage{tabularx}
+\usepackage[backend=bibtex, citestyle=numeric, sorting=none]{biblatex}
+\addbibresource{bibliografia-tesi-Taiwo-Solomon.bib}
+\usepackage{eso-pic} % Pacchetto per gestire immagini di sfondo
+
+% Definizione del nero puro
+
+\lstset{
+    basicstyle=\ttfamily\small,
+    breaklines=true,
+    numbers=left,
+    numberstyle=\tiny,
+    frame=single,
+    captionpos=b,
+    showstringspaces=false,
+}
+
+\setlength{\headheight}{15pt}
+
+\titleformat
+{\chapter}
+[display]
+{\bfseries\Huge\bfseries}
+{\flushright \color{pureblack}{\Large Capitolo \thechapter}}
+{0.2ex}
+{
+    \rule{\textwidth}{3pt}
+    \centering
+}
+[
+\rule{\textwidth}{3pt}
+]
+
+% Definisci il colore verde personalizzato
+\definecolor{CustomGreen}{RGB}{11, 103, 48}  % RGB per 0b6730
+\definecolor{Gold}{rgb}{0.85, 0.65, 0.13}  % Definisci il colore oro
+
+\hypersetup{
+    unicode=false,
+    pdftoolbar=true,
+    pdfmenubar=true,
+    pdffitwindow=false,
+    pdfstartview={FitH},
+    pdftitle={Interfaccia web per la gestione dei permessi in una piattaforma E-learning per scuole superiori},
+    pdfauthor={Taiwo Solomon Olamide},
+    pdfsubject={Interfaccia web per la gestione dei permessi in una piattaforma E-learning per scuole superiori},
+    pdfcreator={Taiwo Solomon Olamide},
+    pdfproducer={Taiwo Solomon Olamide},
+    pdfkeywords={Ruby, Ruby on Rails, Vue.js, Quasar, PostgreSQL},
+    linktocpage=false,
+    pdfnewwindow=true,
+    colorlinks=true,
+    linkcolor=black,
+    citecolor=blue,
+    filecolor=green,
+    urlcolor=magenta
+}
+
+\makeatletter
+\newcommand{\emptypage}[1]{%
+  \cleardoublepage
+  \begingroup
+  \let\ps@plain\ps@empty
+  \pagestyle{empty}
+  #1
+  \cleardoublepage}
+\makeatletter
+
+\renewcommand{\baselinestretch}{1.2}
+
+\begin{document}
+%%% Nuova geometria per la pagina del titolo
+\newgeometry{
+  top=2cm,
+  bottom=2cm,
+  left=2cm,
+  right=2cm,
+  headsep=25pt,
+  headheight=15pt
+}
+
+%%% Pagina del titolo
+\begin{titlepage}
+  \AddToShipoutPictureBG*{%
+    \AtPageLowerLeft{%
+      \color{black}\rule{\paperwidth}{\paperheight}%
+    }%
+  }
+  
+  \color{Gold}  % Imposta il colore del testo a oro
+  \topskip0pt
+  \centering
+  \vspace*{5mm}
+  \includegraphics[width=0.5\textwidth]{../images/logo-unife-gold-hires.png}\\
+  \vspace*{1cm}
+  \huge \textbf{\textsc{Università degli Studi di Ferrara}}\\
+  \Large \textsc{Corso di Laurea in Informatica}
+
+  \vspace*{2.5cm}
+  \hrule width \hsize \kern 1mm \hrule width \hsize height 2pt
+  \vspace*{10mm}
+  \Huge \emph{\textnormal{Interfaccia web per la gestione dei permessi in una piattaforma E-learning per scuole superiori}}
+  \vspace*{10mm}
+  \hrule width \hsize height 2pt
+  \vspace*{1mm}
+  \hrule width \hsize \kern 1mm
+
+  \vspace*{3.5cm}
+  \begin{minipage}{0.45\textwidth}
+    \begin{flushleft} \Large
+      \emph{Relatore:}\\
+      \Large \textbf{Prof. Fabrizio \textsc{Riguzzi}}\\
+      \emph{Secondo relatore:}\\
+      \Large \textbf{Dr. Ing. Arnaud \textsc{Nguembang Fadja}}
+    \end{flushleft}
+  \end{minipage}
+  \begin{minipage}{0.5\textwidth}
+    \begin{flushright} \Large
+      \emph{Laureando:} \\
+      \Large \textbf{Solomon Olamide \textsc{Taiwo}}
+    \end{flushright}
+  \end{minipage}
+
+  \vfill % Push 'Anno accademico' to the bottom
+  \Large \textsc{Anno Accademico $2023/2024$}
+\end{titlepage}
+
+\restoregeometry
+
+\end{document}

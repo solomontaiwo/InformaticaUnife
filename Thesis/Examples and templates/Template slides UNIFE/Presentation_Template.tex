@@ -1,0 +1,300 @@
+\documentclass[11pt,xcolor={dvipsnames}]{beamer} % presentation output
+% \documentclass[11pt,xcolor={dvipsnames},handout]{beamer} % Beamer printout
+% xcolor allows to use many new colors with \usecolortheme
+
+\mode<presentation>{
+  \usetheme{Warsaw}
+%  Here is a gallery with other themes:
+%  http://deic.uab.es/~iblanes/beamer_gallery/
+  \usecolortheme[named=OliveGreen]{structure}
+%  Others: OliveGreen, Brown, Sepia, RawSienna,
+  \useoutertheme{shadow}
+ 	\setbeamercovered{transparent}
+	\setbeamercolor{block title example}{fg=white,bg=Blue}
+	\setbeamercolor{block body example}{fg=black,bg=Blue!10}
+	\setbeamercolor{postit}{fg=black,bg=OliveGreen!20}
+	\setbeamercolor{postit2}{fg=yellow,bg=OliveGreen}
+%    \setbeamercolor{NEW_STYLE_NAME}{fg=COLOR_FOREGROUNG,bg=COLOR_BACKGROUNG}
+}
+
+%% Setting for Beamer printout
+% reference: http://mathoverflow.net/questions/5893/beamer-printout
+\usepackage{pgfpages}
+\mode<handout>{
+  \usetheme{default}
+  \setbeamercolor{background canvas}{bg=Black!5}
+  \pgfpagesuselayout{4 on 1}[a4paper,portrait,border shrink=2.5mm]
+  % 4 slide in one page
+}
+%% Setting for Beamer printout
+
+\usepackage[italian]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{times}
+\usepackage[T1]{fontenc}
+\usepackage{graphics}
+\graphicspath{{images/}}
+% all the graphics files will go in the subdirectory images
+%\usepackage{numprint}
+% with this one \np{1000} becomes 1 000
+\usepackage{mathcomp}
+%\usepackage{gensymb}
+% with this one \numprint[\textcelsius]{20} becomes 20°C
+\newcommand{\ud}{\mathop{}\ \mathrm{d}}
+% with this one \ud{x} becomes dx
+\usepackage{mathtools}
+\DeclarePairedDelimiter{\abs}{\lvert}{\rvert}
+% to define absolute value (mathtools is required)
+
+\hypersetup{
+			pdftitle={Title of Your Presentation},
+			pdfsubject={University, Department},
+			pdfauthor={Name Surname},
+			pdfkeywords={Key1, Key2, Key3, etc.},
+			pdfpagemode=FullScreen, % once opened it goes in fullscreen modality
+			%citecolor=black,
+			%filecolor=black,
+			%linkcolor=black,
+			%urlcolor=black
+}
+
+\usepackage[absolute,overlay]{textpos}
+\setlength{\TPHorizModule}{1mm}
+\setlength{\TPVertModule}{1mm}
+
+%%%% A NEW COMMAND TO FIX LOGO POSITION (x,y) in mm
+\newcommand{\MyLogo}{%
+\begin{textblock}{14}(2.0,80)
+%  \pgfuseimage{logo}
+ \includegraphics[height=1.15cm, angle=0]{logo}
+\end{textblock}
+}
+%%%% A NEW COMMAND TO FIX LOGO POSITION (x,y) in mm
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title[Short Title of Your Presentation]{Complete Title of Your Presentation}
+\author[Name Surname]
+{Name Surname}
+\institute[Institute Name]
+{
+  Complete Name of The Institute\\
+  Other Information \\
+  Department Name \\[0.5Cm]
+  Supervisor\\ Prof. Eng. \textbf{Name Surname}\\[0.25Cm]
+  Correlator\\ Eng. \textbf{Name Surname}\\
+  }
+\date{December 2, 2012}
+
+%\logo{\includegraphics[height=1.5cm, angle=0]{logo}}
+% To have a logo on each page... BAD RESULT!!
+
+%\titlegraphic{\includegraphics[height=1.4cm, angle=0]{logo}}
+% To have an imagie on title page
+
+%%%% TO HAVE A TOC ON EVERY SLIDE
+%\AtBeginSubsection[]
+%{
+%  \begin{frame}<beamer>{Sommario}
+%    \tableofcontents[currentsection,currentsubsection]
+%    \tableofcontents[currentsection]
+%    \tableofcontents
+%  \end{frame}
+%}
+%%%% TO HAVE A TOC ON EVERY SLIDE
+
+\begin{document}
+\transduration{1}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    TITLE    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\transdissolve
+\MyLogo
+\begin{center}
+ %\includegraphics[height=1.5cm, angle=0]{logo}
+  \titlepage
+\end{center}
+\end{frame}
+
+%%%% TOC
+\begin{frame}{Contents}
+\transboxin
+\MyLogo
+%\tableofcontents[pausesections,part=1]
+  \tableofcontents
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% FIRST SECTION %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Title of Section 1}
+
+\subsection{Title of Subsection 1.1}
+\begin{frame}{Title of Frame 1}
+\transboxin
+%\transblindshorizontal
+% type of transition effect
+\MyLogo
+\begin{center}
+%\includegraphics[width=.3\textwidth]{image}
+\begin{block}{Block title}
+Description of this block. Description of this block. Description of this block. Description of this block.
+\end{block}
+\end{center}
+\end{frame}
+
+\begin{frame}{Title of Frame 2}
+%\transblindshorizontal
+\MyLogo
+\begin{center}
+%\includegraphics[width=.3\textwidth]{image}
+\begin{alertblock}{Block title}
+Description of this block. Description of this block. Description of this block. Description of this block. \\
+\end{alertblock}
+\vspace{0.8cm}
+\end{center}
+\end{frame}
+
+\begin{frame}{Title of Frame 3}
+%\transglitter
+\MyLogo
+\begin{columns}
+\column{.6\textwidth}
+%	\includegraphics[width=.6\textwidth]{image}
+\column{.4\textwidth}
+\begin{block}{Block title}
+Description of this block. Description of this block. Description of this block. Description of this block.
+\end{block}
+\bigskip \bigskip
+\begin{block}{Block title}
+Description of this block. Description of this block. Description of this block. Description of this block.
+\end{block}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Title of Frame 4}
+%\transglitter
+\MyLogo
+\begin{columns}
+\column{.6\textwidth}
+%	\includegraphics<1>[width=.5\textwidth]{image1}
+%	\includegraphics<2>[width=.5\textwidth]{image}%
+%	\includegraphics<3>[width=.5\textwidth]{image3}
+\column{.4\textwidth}
+	\begin{itemize}
+  		\item<1-> Text: \alert{text}
+  		\item<2-> Text: \alert{text}
+		\item<3-> Text: \alert{text}
+  	\end{itemize}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Title of Frame 5}
+%\transdissolve
+\MyLogo
+\begin{columns}
+\column{.4\textwidth}
+	\begin{itemize}
+  		\item Text text text
+  		\item Text text text
+		\item Text text text
+		\item Text text text
+  	\end{itemize}
+\column{.6\textwidth}
+%	\includegraphics [width=.5\textwidth]{image}
+\end{columns}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Title of Frame 6}
+\framesubtitle{Subtitle of Frame 6}
+%\transdissolve
+\MyLogo
+\begin{columns}
+\column{.25\textwidth}
+\begin{align*}
+ \alert{COP_H} &= \dfrac{\abs{Q_2}}{\abs{L}} \\
+ 	   &= \dfrac{\abs{Q_2}}{\abs{Q_2}-Q_1} \\
+ 	   &= \alert{\dfrac{T_2}{T_2-T_1}} \\
+\end{align*}
+\column{.75\textwidth}
+%	\includegraphics[width=.5\textwidth]{image1}
+\end{columns}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Title of Subsection 1.2}
+\begin{frame}{Subtitle of Frame 7}
+%\transblindshorizontal
+\MyLogo
+\begin{enumerate}
+\item<1-> Text text text text text text text text text text text text text text text text text text text text text text text text text text;
+\item<2-> text text text text text text text text text text text text text text text text text text text text text text text text text;
+\item<3-> text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text.
+\end{enumerate}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Title of Subsection 1.3}
+\begin{frame}{Subtitle of Frame 8}
+%\transblindshorizontal
+\MyLogo
+\begin{center}
+%\includegraphics[width=.2\textwidth]{image1}
+\end{center}
+\pause
+\begin{beamercolorbox}[shadow=false, rounded=true]{postit2}
+\begin{itemize}
+\item text text text text text text text text text text
+\item text text text text
+\item text text text text text text text text text text text text
+\item text text text text
+\end{itemize}
+\end{beamercolorbox}
+\end{frame}
+
+\subsection{Title of Subsection 1.4}
+\begin{frame}{Subtitle of Frame 9}
+\transdissolve
+\MyLogo
+\begin{itemize}
+\item<1-> Text text text text text text text text text text text text text text text text text text;
+\item<2-> text text text text text text text text text text text text text text text text text text text text text text text text text;
+\item<3-> text text text text text text text text text text.
+\end{itemize}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% SECOND SECTION %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Title of Section 2}
+
+\subsection{Title of Subsection 2.1}
+\begin{frame}{Subtitle of Frame 10}
+\transboxin
+\MyLogo
+\begin{itemize}
+\item<1-> text text text text text text text text text text text text text text text text text text text text text text text text
+\begin{beamercolorbox}[center, shadow=false, rounded=true]{postit2}
+text text text text text text text text 
+\end{beamercolorbox}
+\item<2->  text text text text text text text text text text text text text text text text text text text text
+\item<3->  text text text text text text text text text text text text text text text text text text text text
+\end{itemize}
+\end{frame}
+
+%
+% ...
+%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LAST FRAME %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\transboxin
+\MyLogo
+\vspace{1.0cm}
+\begin{beamercolorbox}[sep=1.0cm, center, shadow=false, rounded=true]{postit2}
+\begin{Huge}Thank you for your attention\end{Huge}
+\end{beamercolorbox}
+\pause
+\end{frame}
+
+\end{document} 

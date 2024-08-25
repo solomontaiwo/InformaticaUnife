@@ -1,0 +1,88 @@
+\documentclass[a4paper, 12pt]{book}
+\usepackage{amssymb}
+\usepackage[english,italian]{babel}
+\usepackage{xspace}
+\usepackage{tikz}
+\usepackage[newitem,newenum,neverdecrease]{paralist}
+\usepackage{amsmath,amssymb,amsfonts,mathrsfs,latexsym,stmaryrd}
+\usepackage{mathtools}
+\usepackage{amsthm}
+\usepackage{ifpdf}
+\usepackage{cases}
+\usepackage{ragged2e} 	% https://tex.stackexchange.com/questions/89680/how-can-one-set-full-justification-within-left-justified-raggedright-text
+\usepackage{breakcites} % https://tex.stackexchange.com/questions/2773/how-do-i-make-latex-push-long-citations-to-a-new-line
+\usepackage{hyperref}	% http://tex.stackexchange.com/questions/73862/how-can-i-make-a-clickable-table-of-contents
+\usepackage{fancyhdr}	% https://www.sharelatex.com/blog/2013/08/06/thesis-series-pt2.html
+\usepackage{titlesec} 	% http://tex.stackexchange.com/questions/11444/how-to-format-the-chapter-heading
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{xcolor}
+\usepackage{geometry}
+\usepackage{layout}		% http://tex.stackexchange.com/questions/50258/margins-of-book-class
+\usepackage{lipsum}   % for dummy text "Lorem Ipsum"
+\usepackage{pdfpages}
+\input{fixpseudocode}	% for pseudocodes
+\usepackage[a-1b]{pdfx}
+
+%%% Formattazione del header del Capitolo
+\titleformat
+{\chapter} % command
+[display] % shape
+{\bfseries\Huge\itshape} % format
+{\flushright \color{black!45}{\Large Capitolo \thechapter}} % label
+{0.5ex} % sep
+{
+    \rule{\textwidth}{3pt}
+    \vspace{1ex}
+    \centering
+} % before-code
+[
+\vspace{-0.5ex}%
+\rule{\textwidth}{3pt}
+] % after-code
+%%% end
+
+%%% Formattazione dei hyper riferimenti (hyperref)
+% hyperref setup -- http://tex.stackexchange.com/questions/73862/how-can-i-make-a-clickable-table-of-contents
+\definecolor{Aqua}{rgb}{0,0.45,0.45}
+\definecolor{Gold}{rgb}{0.55,0.55,0}
+\definecolor{DarkGray}{rgb}{0.3, 0.3, 0.3}
+\hypersetup{
+    bookmarks=true,         % show bookmarks bar?
+    unicode=false,          % non-Latin characters in Acrobat’s bookmarks
+    pdftoolbar=true,        % show Acrobat’s toolbar?
+    pdfmenubar=true,        % show Acrobat’s menu?
+    pdffitwindow=false,     % window fit to page when opened
+    pdfstartview={FitH},    % fits the width of the page to the window
+    pdftitle={Interfaccia per la gestione dei permessi in una piattaforma E-learning per scuole superiori},    % title
+    pdfauthor={Taiwo Solomon Olamide},     % author
+    pdfsubject={Interfaccia per la gestione dei permessi in una piattaforma E-learning per scuole superiori},   % subject of the document
+    pdfcreator={Taiwo Solomon Olamide},   % creator of the document
+    pdfproducer={Taiwo Solomon Olamide}, % producer of the document
+    pdfkeywords={Interfaccia per la gestione dei permessi in una piattaforma E-learning per scuole superiori}, % list of keywords
+    linktocpage=false,		% number hyperref'd =true, false otherwise
+    pdfnewwindow=true,      % links in new PDF window
+    colorlinks=true,       % false: boxed links; true: colored links
+    linkcolor=DarkGray,          % color of internal links (change box color with linkbordercolor)
+    citecolor=magenta,        % color of links to bibliography
+    filecolor=green,      % color of file links
+    urlcolor=Gold           % color of external links
+}
+
+% https://tex.stackexchange.com/questions/95488/list-of-figures-and-page-numbering
+\makeatletter
+\newcommand{\emptypage}[1]{%
+  \cleardoublepage
+  \begingroup
+  \let\ps@plain\ps@empty
+  \pagestyle{empty}
+  #1
+  \cleardoublepage}
+\makeatletter
+
+% base line strech (default 1.0) -- interlinea
+\renewcommand{\baselinestretch}{1.2}
+
+\begin{document}
+\includepdf[pages=1-3]{../tesi/tesi-Taiwo-Solomon-Olamide.pdf}
+\end{document} 
