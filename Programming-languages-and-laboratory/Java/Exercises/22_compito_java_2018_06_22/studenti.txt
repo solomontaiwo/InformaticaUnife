@@ -1,0 +1,27 @@
+1
+Roberto Diolaiti
+1 30L
+2 26
+5 30
+
+2
+Simona Weber
+3 21
+2 29
+4 30L
+
+3
+Roberta Mazzini
+5 22
+3 21
+
+4
+Elena Ricci
+3 18
+1 28
+5 30L
+
+5
+Olivia Vecchi
+2 21
+4 30

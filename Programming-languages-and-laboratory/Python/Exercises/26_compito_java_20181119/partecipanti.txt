@@ -1,0 +1,28 @@
+1 studente
+Roberto
+Diolaiti
+Dottorato in Informatica
+Università di Ferrara
+2
+2 regolare
+Simona
+Weber
+Google
+100000 false
+3 studente
+Roberta
+Mazzini
+Dottorato in Ingegneria Informatica
+Università di Bologna
+3
+4 regolare
+Elena
+Ricci
+Università di Siena
+12000 true
+5 studente
+Olivia
+Mazzini
+Dottorato in Matematica
+Università di Parma
+3

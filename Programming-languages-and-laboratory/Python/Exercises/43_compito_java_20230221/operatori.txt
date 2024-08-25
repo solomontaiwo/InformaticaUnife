@@ -1,0 +1,25 @@
+1 medico
+Giovanni Verdi
+75.0
+otorinolaringoiatra
+10 a10
+2 terapista
+Alberto Pifferi
+62.0
+agopuntura
+b15 5
+3 medico
+Stefania Giovannini
+90.0
+gastroenterologo
+20 a12
+4 terapista
+Monica Freddi
+76.0
+riabilitazione
+b4 4
+5 medico
+Roberta Rossi
+100.0
+Internista
+30 a2

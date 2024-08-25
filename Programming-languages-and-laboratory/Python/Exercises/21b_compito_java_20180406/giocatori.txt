@@ -1,0 +1,27 @@
+1
+testa-di-serie
+Carlo Rambaldi
+10 24 true
+
+2
+normale
+Andrea Verdi
+Circolo Tennis Piave
+24 6
+
+3
+normale
+Marco Volpi
+Tennis ITC
+12 3
+
+4
+testa-di-serie
+Stefano Cerri
+5 19 false
+
+5
+normale
+Andrea Rossi
+Circolo Tennis Arco
+24 7

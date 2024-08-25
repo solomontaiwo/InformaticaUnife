@@ -1,0 +1,20 @@
+1
+Andrea Boninfante 
+18 1
+1 18 2 22 3 10 3 11
+2
+Giovanni Rezende 
+28 2 
+4 16 4 18 2 15
+3
+Stefano Bottioni Alberighi
+21 3
+1 14 2 16 2 18 3 19
+4
+Gian Lorenzo Castelli
+26 4
+1 22 1 19 4 16
+5
+Riccardo Amici 
+23 1
+4 12 2 15

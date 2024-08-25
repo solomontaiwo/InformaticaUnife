@@ -1,0 +1,26 @@
+individuo 1231314
+Giovanni Soldini
+Via Verdi 15, Ferrara
+giosold wereder
+
+azienda 1323
+Idraulica Sicura
+Via Verga 12
+Andrea Verdi
+idr1999 fahhjla
+
+individuo 1332
+Giovanni Veronesi
+Via Rizzoli 15, Ferrara
+vero89 dfaSDsads
+
+azienda 5344
+Elektronica SNC
+Via Zoccoli 13
+Stefano Rossi
+eleksnc asdasd
+
+individuo 422
+Andrea Carli
+Via Roma 1, Ferrara
+andytheking asdas

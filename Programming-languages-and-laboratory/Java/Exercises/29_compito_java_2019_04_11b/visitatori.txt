@@ -1,0 +1,19 @@
+1
+Roberto Ferilli
+1 2.5
+5 3.0
+
+2
+Andrea Guerra
+3 1.0
+4 1.0
+5 2.5
+
+3
+Stefano Fantoni
+5 4.0
+
+4
+Valeria Verdi
+1 4.3
+4 3.3

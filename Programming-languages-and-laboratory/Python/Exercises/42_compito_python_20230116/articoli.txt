@@ -1,0 +1,20 @@
+1 giacca-a-vento
+North Pole
+L
+Summit
+100.9 4 10
+2 piumino
+Ski Connection
+L 240
+High Stake
+204.4 24
+3 giacca-a-vento
+Rossi Sport
+M
+Trekker
+135.6 6 15
+4 piumino
+Giesse
+L 300
+Explorer
+124.3 16

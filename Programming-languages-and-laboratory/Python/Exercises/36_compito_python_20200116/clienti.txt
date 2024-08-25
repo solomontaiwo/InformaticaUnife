@@ -1,0 +1,31 @@
+Boninfante 
+Andrea
+1 25.4
+4 36.6
+
+Rezende 
+Giovanni
+2 59.0
+3 13.4
+
+Bottioni Alberighi
+Stefano
+4 34.2
+1 58.4
+2 63.3
+
+Castelli
+Gian Lorenzo
+1 31.4
+
+Amici 
+Riccardo
+2 42.7
+4 23.5
+3 65.4
+
+Casadei
+Carlo
+3 87.4
+1 27.3
+2 98.4

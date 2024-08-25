@@ -1,0 +1,15 @@
+1 pub
+Celtic Druid
+10 12
+2 osteria
+Gallina Dorata
+24 76.4 true
+3 osteria
+Monte Agnello
+35 86.4 false
+4 pub
+Number 10
+15 21
+5 osteria
+Da Gigi
+48 200.4 true

@@ -1,0 +1,28 @@
+1 ricerca
+Lambda calcolo per la PLP
+Carlo Rambaldi
+Universita’ di Ferrara
+PE5 4
+1.3
+2 innovazione
+Sviluppo di applicazioni per la sanita’
+Andrea Verdi
+Universita’ di Bologna
+10 2.4
+3 ricerca
+Programmazione logica per il data mining
+Marco Volpi
+Universita’ di Verona
+PE6 5
+3.4
+4 innovazione
+Tensorflow su Multicore
+Stefano Cerri
+Universita’ di Parma
+12 3.1
+5 ricerca
+Teoria della probabilità quantistica
+Andrea Rossi
+Universita’ di Ferrara
+PE7 6
+2.4

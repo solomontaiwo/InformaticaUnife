@@ -1,0 +1,14 @@
+1 trainer
+Stefano Firri
+10 12.2
+spinning
+3 nutrizionista
+Angelo Bonvicini
+339456672 true 5 14.3
+4 trainer
+Guglielmo di Occam
+30 15.1
+weight lifting
+5 nutrizionista
+Gigi Reder
+332984372 false 8 13.9

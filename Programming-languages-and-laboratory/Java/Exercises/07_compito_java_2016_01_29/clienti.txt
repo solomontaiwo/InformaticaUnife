@@ -1,0 +1,44 @@
+privato 1231314
+via Verdi 15
+23 6 2015
+Giovanni Verga
+100
+200
+150
+
+azienda 1323
+via Bianchi 7
+15 6 2015
+Hewlett Packard
+200000
+110
+5
+76
+4
+3
+
+privato 1332
+Via Rossi 20
+20 7 2015
+Antonio Tabucchi
+232
+32
+12
+54
+
+azienda 5344
+Via Saragat 1
+18 7 2015
+Epson
+400000
+23
+4
+
+azienda 5422
+Via Macchiavelli 9
+20 7 2015
+IBM
+24400
+30
+32
+23

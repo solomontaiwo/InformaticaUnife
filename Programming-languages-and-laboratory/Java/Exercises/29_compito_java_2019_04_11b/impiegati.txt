@@ -1,0 +1,14 @@
+1 sommelier
+Stefano Firri
+10 12.2
+vini bianchi
+3 guida
+Angelo Bonvicini
+339456672 true 5 14.3
+4 sommelier
+Guglielmo di Occam
+30 15.1
+vini rossi
+5 guida
+Gigi Reder
+332984537 false 8 13.9

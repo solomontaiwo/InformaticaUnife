@@ -1,0 +1,20 @@
+1
+Tutto per la montagna
+Via Monticelli 10
+1 2 3 5 4 6
+2
+Rezende Sport
+Via Motta 4
+4 16 4 18 2 15
+3
+Bottioni
+Via Panaro 13
+1 14 2 16 2 18 3 19
+4
+Castelli
+Via Fondovalle 12
+1 22 1 19 4 16
+5
+Amici
+Via Po 12
+4 12 2 15

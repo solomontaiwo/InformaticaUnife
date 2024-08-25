@@ -1,0 +1,16 @@
+Modena Volley
+1 pallavolo
+5 1 2.5
+
+Sisley Treviso
+2 pallavolo
+4 5 2.1
+
+Mobyt Ferrara
+3 basket
+7 3 86.4
+
+Virtus Bologna
+4 basket
+4 6 75.1
+

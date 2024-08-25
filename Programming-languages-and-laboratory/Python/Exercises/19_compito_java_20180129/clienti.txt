@@ -1,0 +1,33 @@
+residenziale 1231314
+Giovanni Soldini
+mercato libero
+Via Verdi 15, Ferrara
+
+aziendale 1323
+Idraulica Sicura
+20.5
+canone concordato
+Via Verga 12
+
+residenziale 1332
+Giovanni Veronesi
+canone concordato
+Via Rizzoli 15, Ferrara
+
+aziendale 5344
+Elektronica SNC
+30.1
+mercato libero
+Via Zoccoli 13
+
+residenziale 422
+Andrea Carli
+canone concordato
+Via Roma 1, Ferrara
+
+aziendale 3423
+Tesla
+50.1
+mercato libero
+via Dell'Industria 12, Modena
+

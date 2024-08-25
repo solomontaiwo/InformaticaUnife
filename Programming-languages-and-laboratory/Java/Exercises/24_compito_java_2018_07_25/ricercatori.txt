@@ -1,0 +1,28 @@
+Roberto
+Diolaiti
+1 55.5
+2 26.4
+5 100.3
+
+Simona
+Weber
+3 204.3
+2 290.1
+4 300
+
+Roberta
+Mazzini
+5 123
+3 230.5
+
+Elena
+Ricci
+3 333
+1 212.4
+5 231
+
+Olivia
+Mazzini
+2 22.5
+4 304.5
+

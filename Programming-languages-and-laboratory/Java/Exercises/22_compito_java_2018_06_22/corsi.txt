@@ -1,0 +1,28 @@
+1 teoria
+Lambda calcolo
+Carlo Rambaldi
+10 24 2.5
+
+2 laboratorio
+Sviluppo di app
+Andrea Verdi
+Info 1
+Stefano Giorgi
+25
+
+3 teoria
+Programmazione logica
+Marco Volpi
+12 21 3.5
+
+4 laboratorio
+Tensorflow
+Stefano Cerri
+Info 2
+Andrea Ricci
+24
+
+5 teoria
+Teoria della probabilità
+Andrea Rossi
+5 8 2

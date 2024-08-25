@@ -1,0 +1,72 @@
+1
+Boninfante 
+Andrea
+37 4 palleggiatore true
+1
+Rezende 
+Giovanni
+28 12 palleggiatore false
+3
+Bottioni Alberighi
+Stefano
+21 19 play false
+3
+Castelli
+Gian Lorenzo
+26 4 ala true
+3
+Amici 
+Riccardo
+23 17 ala false
+1
+Casadei
+Calro
+30 1 opposto true
+1
+Petric
+Ivan
+27 11 schiacciatore true
+1
+Piano
+Roberto
+24 7 centrale true
+2
+Elgarten
+Vilmar
+30 1 palleggiatore false
+2
+Szabo
+Zsolt
+24 15 schiacciatore true
+2
+Fei Fei
+Li
+36 5 schiacciatore false
+3
+Huff
+John
+22 3 guardia true
+3
+Ferri
+Adriano
+29 22 play true
+4
+White
+Barry
+22 1 ala true
+4
+Imbrò 
+Calogero
+20 12 play false
+4
+Mazzola
+Dino
+26 14 ala true
+4
+Hazell
+Ilic
+28 21 guardia true
+4
+Ray
+Oliver
+30 25 centro true

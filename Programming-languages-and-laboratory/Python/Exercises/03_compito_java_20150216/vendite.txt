@@ -1,0 +1,41 @@
+libro 1231314  
+Un filo di fumo
+Andrea Camilleri
+10
+8798798-878
+
+libro 123422
+Come stanno le cose. Il mio Lucrezio, la mia Venere
+Piergiorgio Odifreddi
+15
+321414-1312
+
+CD 131321
+Rock or Bust
+AC/DC
+14
+64
+
+libro 9845344 
+La relazione
+Andrea Camilleri
+12
+4213432-23423
+
+CD 6456745
+Coda
+Led Zeppelin
+10
+58
+
+libro 52323
+Il museo dei numeri
+Piergiorgio Odifreddi
+16
+21412-312
+
+CD 5324534 
+Houses of the Holy
+Led Zeppelin
+12
+47

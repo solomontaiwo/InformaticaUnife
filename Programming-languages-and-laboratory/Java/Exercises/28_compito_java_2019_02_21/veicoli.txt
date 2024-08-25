@@ -1,0 +1,22 @@
+1 auto EX222AZ
+1600 true
+Megane
+Renault
+2 furgone AA328EF
+van
+9
+Ducato
+Fiat
+3 auto BB323SC
+1900 false
+Qashqai
+Nissan
+4 furgone CD845WA
+autoarticolato
+4
+Stralis
+Iveco
+5 auto DH958XZ
+2200 true
+Q60
+Infiniti

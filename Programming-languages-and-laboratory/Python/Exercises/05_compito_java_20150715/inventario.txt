@@ -1,0 +1,56 @@
+toner 1231314
+HP LS 2323
+Hewlett Packard
+23 6 2015
+70
+HP LaserJet 3123
+4
+5
+7
+
+stampante 1323
+LX 23423
+Lexmark
+15 6 2015
+110
+5
+76
+4
+3
+56
+34
+34
+
+toner 1332
+E 4534
+Epson
+20 7 2015
+50
+XP 3232
+90
+232
+32
+12
+54
+
+toner 5344
+R 2342
+Ricoh
+18 7 2015
+40
+RT 3232
+12
+23
+23
+12
+4
+
+stampante 5422
+XP 3232
+Epson
+20 7 2015
+200
+30
+32
+23
+12

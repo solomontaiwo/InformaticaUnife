@@ -1,0 +1,49 @@
+privato 1231314
+23 6 2015
+Giovanni Soldini
+Via Verdi 15, Ferrara
+SLDGVN23423423
+Viti diametro 0.5
+100 3
+Chiodi lunghezza 2cm
+1000 2
+
+professionista 1323
+15 6 2015
+Idraulica Sicura
+12312312 2132
+Rubinetto lavello
+2 4
+Tubo cm 60
+4 5
+
+privato 1332
+20 6 2015
+Andrea Pincherle
+Via San Leonardo, Bologna
+PNCNDR2131231
+Assi di legno m. 2
+10 4
+Fogli di compensato 30x60
+15 2
+Martello
+1 3
+
+professionista 5344
+10 7 2015
+Elektronica SNC
+12312312 223
+Cavo diametro 3mm x 10 m
+12 6
+Interruttore
+6 3
+
+privato 422
+21 6 2015
+Roberto Spiga
+Via Fondazza 13, Bologna
+SPGRBR2131231
+Batterie AA
+40 2
+Caricabatterie
+2 14

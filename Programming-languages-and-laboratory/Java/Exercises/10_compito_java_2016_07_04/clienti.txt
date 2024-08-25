@@ -1,0 +1,38 @@
+privato 1
+Gianni Boninfante
+1
+14 22
+100.0
+
+azienda 2
+Rezende SNC
+22
+1 14
+1250.2
+1340.5
+
+privato 3
+Francesco Ottioni 
+14
+1 2 22
+340.4
+
+privato 6
+Stefano Castelli
+2
+14
+563.4
+
+azienda 9
+Petric Sistemi
+1
+22
+453.3
+600.4
+
+azienda 10
+Maruotti SRL
+2
+1 22 14
+453.3
+733.4

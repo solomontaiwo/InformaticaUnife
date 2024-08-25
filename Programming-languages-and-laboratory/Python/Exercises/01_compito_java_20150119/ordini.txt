@@ -1,0 +1,8 @@
+b 308 Peugeot 420 1000 1231314
+f RAV4 Toyota 6 1500 5326354
+b 208 Peugeot 300 900 6365464
+b Punto Fiat 310 890 9845344
+f Renegade Jeep 7 1600 3242342
+f Defender Land-Rover 7 2000 6456546
+f ix35 Hyundai 8 1800 6456457
+b Giulietta Alfa-Romeo 500 1200 6547512

@@ -1,0 +1,24 @@
+12th International Conference on Logic Programming
+Parigi
+1 300
+5 300
+2 500
+
+14th International Conference on Functional Programming
+Londra
+3 250
+5 260
+4 600
+
+17th International Conference on Artificial Intelligence
+Macao
+1 290
+2 700
+4 600
+
+19th International Conference on Machine Learning
+Pechino
+3 310
+2 700
+5 305
+

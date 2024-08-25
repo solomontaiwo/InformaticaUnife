@@ -1,0 +1,10 @@
+Roberto Diolaiti
+1 4 2 2 5 3
+Simona Weber
+3 2 2 1 4 3
+Roberta Mazzini
+5 12 3 20
+Elena Ricci
+3 10 1 2 5 12
+Olivia Mazzini
+2 2 4 30
