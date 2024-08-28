@@ -1,6 +1,8 @@
-.DS_Store
-/.vscode
-*.o
-.DS_Store
-algos-comparison
+# Folders
 /Thesis
+/.vscode
+
+# Misc
+.DS_Store
+*.o
+algos-comparison
