@@ -1,6 +1,0 @@
-stringa
-parola
-Hello World
-non so cosa scrivere
-Asdrubale
-Ultima stringa

@@ -1,1 +1,0 @@
-void pariDispari(int numero);

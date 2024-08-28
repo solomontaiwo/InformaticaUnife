@@ -1,5 +1,0 @@
-#titolo,autore,definitivo,data
-ciao
-ciao
-ciao
-ciao

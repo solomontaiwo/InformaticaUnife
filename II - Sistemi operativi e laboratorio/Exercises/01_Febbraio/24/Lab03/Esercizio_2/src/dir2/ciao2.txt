@@ -1,2 +1,0 @@
-#titolo,autore,preliminare,data
-ciao

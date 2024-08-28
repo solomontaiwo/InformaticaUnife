@@ -1,1 +1,0 @@
-void insertionSort(int array[], int lunghezza);

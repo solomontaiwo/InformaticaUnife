@@ -1,5 +1,0 @@
-ALTRO TESTO
-riga2
-riga3
-riga4
-riga5

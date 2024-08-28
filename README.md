@@ -8,4 +8,4 @@ La repository è organizzata in cartelle nominate in base all'anno ("I, II, III"
 
 ## **Contributi**
 
-Per qualsiasi domanda, suggerimento o contributo, puoi contattarmi via email all’indirizzo: [solomon.taiwo@studenti.polito.it](mailto:solomon.taiwo@studenti.polito.it) (più usata) oppure [solomon.olamidetaiwo@edu.unife.it](solomonolamide.taiwo@edu.unife.it)
+Per qualsiasi domanda, suggerimento o contributo (che si può fare anche aprendo una issue su questo progetto), puoi contattarmi via email all’indirizzo [solomon.taiwo@studenti.polito.it](mailto:solomon.taiwo@studenti.polito.it) (più usata) oppure [solomon.olamidetaiwo@edu.unife.it](solomonolamide.taiwo@edu.unife.it). Ad maiora!

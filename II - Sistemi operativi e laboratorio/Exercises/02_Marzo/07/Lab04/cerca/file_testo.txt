@@ -1,3 +1,0 @@
-file_testo.txt prova
-file_testo.txt cerca
-file_testo.txt questo

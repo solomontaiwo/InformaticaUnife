@@ -1,5 +1,0 @@
-linea di test 1
-linea di test 2
-linea di test 3
-linea di test 4
-linea di test 5

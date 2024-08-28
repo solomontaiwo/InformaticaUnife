@@ -1,8 +1,0 @@
-Via Rossini, 21 4 5.000
-Corso Roma, 32 6 1.700
-Via Garibaldi, 71 4 1.500
-Via Garibaldi, 19 5 1.400
-Via Mazzini, 19 4 0.250
-Viale Cavour, 10 4 0.500
-Piazza Dante, 15 4 0.700
-Via Mazzini, 18 5 0.200
