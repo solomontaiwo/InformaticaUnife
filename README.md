@@ -1,6 +1,6 @@
 # Materiale Informatica @ Unife
 
-Questa repository contiene appunti, esercizi, progetti e risorse varie raccolte durante il mio percorso di studio in [Informatica presso l&#39;Università degli Studi di Ferrara](https://corsi.unife.it/informatica). L’obiettivo è condividere queste risorse con altri studenti e appassionati, offrendo un punto di riferimento utile per chi sta seguendo o seguirà il corso di laurea.
+Questa repository contiene appunti, esercizi, progetti e risorse varie raccolte durante il mio percorso di studio in [Informatica](https://corsi.unife.it/informatica) presso l'Università degli Studi di Ferrara. L’obiettivo è condividere queste risorse con altri studenti e appassionati, offrendo un punto di riferimento utile per chi sta seguendo o seguirà il corso di laurea.
 
 ## **Contenuto**
 
