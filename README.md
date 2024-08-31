@@ -1,13 +1,13 @@
 # Materiale Informatica @ Unife
 
-Questa repository contiene appunti, esercizi, progetti e risorse varie raccolte durante il mio percorso di studio in [Informatica](https://corsi.unife.it/informatica) presso l'Università degli Studi di Ferrara. L’obiettivo è condividere queste risorse con altri studenti e appassionati, offrendo un punto di riferimento utile per chi sta seguendo o seguirà il corso di laurea.
+Questa repository contiene appunti, esercizi, progetti e risorse varie raccolte durante il mio percorso di studio in [Informatica](https://corsi.unife.it/informatica) presso l'Università degli Studi di Ferrara. L’obiettivo è condividere questo materiale con altri studenti e appassionati, offrendo un punto di riferimento utile per chi sta seguendo o seguirà il corso di laurea.
 
-## **Contenuto**
+## **Struttura del contenuto**
 
-La repository è organizzata in cartelle nominate in base all'anno ("I, II, III" = "primo, secondo o terzo") e il corso specifico. Ogni cartella contiene i materiali relativi a quella materia, quindi esercizi (svolti e non), slide, esami passati e altre risorse utili.
+I contenuti della repository sono organizzati in cartelle suddivise per anno di corso (“I, II, III” = “primo, secondo, terzo”) e per materia specifica. All’interno di ogni cartella troverai esercizi (risolti e non), slide, esami passati e altre risorse rilevanti.
 
-## **Contributi**
+## **Come contribuire**
 
-Per qualsiasi domanda, suggerimento o contributo (che si può fare anche aprendo una issue su questo progetto), puoi contattarmi via email all’indirizzo [solomon.taiwo@studenti.polito.it](mailto:solomon.taiwo@studenti.polito.it) (più usato) oppure [solomonolamide.taiwo@edu.unife.it](solomonolamide.taiwo@edu.unife.it). 
+Per domande, suggerimenti o contributi (anche tramite l'apertura di una issue su questo progetto), puoi contattarmi via email all’indirizzo a [solomon.taiwo@studenti.polito.it](mailto:solomon.taiwo@studenti.polito.it) (la più utilizzata) oppure [solomonolamide.taiwo@edu.unife.it](solomonolamide.taiwo@edu.unife.it).
 
 Ad maiora!
